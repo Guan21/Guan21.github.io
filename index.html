@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guan21 · 个人主页</title>
+  <meta name="description" content="Guan21 的个人主页第一版：把作品、想法、证据和联系方式放在同一个可公开更新的地方。">
+  <meta name="theme-color" content="#10100f">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Guan21 · 个人主页">
+  <meta property="og:description" content="一个先上线、后迭代的个人主页：定位、作品、想法、证据和联系入口。">
+  <meta property="og:image" content="assets/hero.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="回到顶部">
+      <span class="brand-mark" aria-hidden="true">G</span>
+      <span>Guan21</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#position">定位</a>
+      <a href="#work">作品</a>
+      <a href="#thinking">想法</a>
+      <a href="#proof">证据</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal site · first public version</p>
+        <h1>把我做过的事，变成别人一眼能验证的证据。</h1>
+        <p class="lede">这是一个先上线、后迭代的个人主页草稿。它不急着把履历写满，而是先建立一个清晰的容器：我关注什么、做过什么、怎么判断问题，以及哪些链接可以证明这些事真的发生过。</p>
+        <div class="hero-actions" aria-label="主要操作">
+          <a class="btn primary" href="#work">看页面结构</a>
+          <a class="btn secondary" href="https://github.com/Guan21" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/hero.png" alt="一张深色书桌照片，笔记本电脑上浮现抽象卡片与证据节点，旁边放着打开的笔记本。">
+        <figcaption>AI 时代的个人主页，不是名片，是可更新的证据库。</figcaption>
+      </figure>
+    </section>
+
+    <section class="section intro" id="position">
+      <div class="section-head">
+        <p class="section-no">01</p>
+        <h2>当前定位</h2>
+      </div>
+      <div class="intro-grid">
+        <article>
+          <h3>问题解决者</h3>
+          <p>主页先不把自己包装成一个固定头衔，而是展示一种工作方式：遇到问题，拆出假设，做出可运行的东西，再用结果修正判断。</p>
+        </article>
+        <article>
+          <h3>AI 原生协作者</h3>
+          <p>把 AI 当作调研、写作、开发和复盘的搭档。页面会预留 AI 工作流、作品生成过程和工具链记录的位置。</p>
+        </article>
+        <article>
+          <h3>持续公开输出的人</h3>
+          <p>不等资料完美才开始。先让主页上线，再把新项目、文章、视频、实验和复盘不断放进来。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-head">
+        <p class="section-no">02</p>
+        <h2>作品应该这样写</h2>
+        <p>参考你发来的几个主页，这一版采用“问题 - 做法 - 证据 - 边界”的写法。后续只要把真实项目替换进去，就会比普通履历更有说服力。</p>
+      </div>
+      <div class="work-list">
+        <article class="work-card featured">
+          <div>
+            <p class="tag">正在搭建</p>
+            <h3>个人主页：把自己变成可检索资产</h3>
+          </div>
+          <p><strong>问题：</strong>很多能力散在对话、项目、笔记和 GitHub 里，别人看不见，也无法快速判断可信度。</p>
+          <p><strong>做法：</strong>先做一个 GitHub Pages 主页，把定位、作品、文章和证据链接收进同一个入口。</p>
+          <p><strong>证据：</strong>这个页面本身就是第一件公开作品；后续每次迭代都可以在 GitHub 记录里查到。</p>
+          <p><strong>边界：</strong>目前仍缺少你的真实项目、头像、文章和联系方式，需要下一轮补齐。</p>
+        </article>
+        <article class="work-card">
+          <p class="tag">待替换</p>
+          <h3>项目 A：一个真实问题</h3>
+          <p>把项目写成故事，不只写“我做了什么”，也写“为什么这件事值得做”。</p>
+        </article>
+        <article class="work-card">
+          <p class="tag">待替换</p>
+          <h3>项目 B：一个可验证成果</h3>
+          <p>放 GitHub、视频、文档、截图、数据、演示链接。能查证的内容，比形容词更有力量。</p>
+        </article>
+        <article class="work-card">
+          <p class="tag">待替换</p>
+          <h3>项目 C：一次复盘</h3>
+          <p>写清楚限制、失败和修正。一个可信的人，不只展示成功，也展示判断如何变得更准。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section thinking" id="thinking">
+      <div class="section-head">
+        <p class="section-no">03</p>
+        <h2>想法入口</h2>
+      </div>
+      <div class="quote-panel">
+        <blockquote>AI 时代的个人主页，不只是“我是谁”，而是“我如何持续把经历、作品和判断沉淀成可被别人引用的证据”。</blockquote>
+        <p>这一块适合放文章、视频笔记、阅读摘录和工作复盘。你刚才给的视频主题很适合作为第一篇：为什么 AI 时代更需要个人网站。</p>
+      </div>
+      <div class="note-grid">
+        <a href="#" aria-disabled="true">
+          <span>待写</span>
+          <strong>为什么我要做个人主页</strong>
+          <em>把这次搭建过程写成第一篇文章。</em>
+        </a>
+        <a href="#" aria-disabled="true">
+          <span>待写</span>
+          <strong>我如何使用 AI</strong>
+          <em>从工具清单转成可复用的方法。</em>
+        </a>
+        <a href="#" aria-disabled="true">
+          <span>待写</span>
+          <strong>我的项目复盘模板</strong>
+          <em>问题、做法、验证、边界。</em>
+        </a>
+      </div>
+    </section>
+
+    <section class="section proof" id="proof">
+      <div class="section-head">
+        <p class="section-no">04</p>
+        <h2>证据清单</h2>
+        <p>这块后续会成为主页的可信度核心：每一条能力最好都有一个链接、截图、仓库、文档或第三方记录支撑。</p>
+      </div>
+      <ul class="proof-list">
+        <li><span>GitHub</span><a href="https://github.com/Guan21" target="_blank" rel="noreferrer">github.com/Guan21</a></li>
+        <li><span>主页仓库</span><a href="https://github.com/Guan21/Guan21.github.io" target="_blank" rel="noreferrer">Guan21.github.io</a></li>
+        <li><span>作品链接</span><strong>等待补充真实项目</strong></li>
+        <li><span>文章/视频</span><strong>等待补充公开输出</strong></li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-no">05</p>
+      <h2>下一步，把真实内容填进来。</h2>
+      <p>这一版已经可以上线。下一轮只需要补四类素材：你的名字或公开昵称、3 个真实作品、1 张头像或代表图、一个你愿意公开的联系方式。</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://github.com/Guan21/Guan21.github.io" target="_blank" rel="noreferrer">编辑这个主页</a>
+        <a class="btn secondary" href="#top">回到顶部</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Guan21</span>
+    <span>Built for GitHub Pages</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
