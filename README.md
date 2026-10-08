@@ -1,6 +1,6 @@
 # 管清陽 個人主页
 
-管清陽的求职向个人主页，面向 GitHub Pages。核心定位是“新技术落地型工程师”。
+管清陽的求职向个人主页，面向 GitHub Pages。主站为 English first，面向日本的外企 / 面向日本市场的全球公司。
 
 ## 文件结构
 
@@ -19,12 +19,12 @@
 
 ## 内容结构
 
-当前页面已经调整为求职主页，重点展示：
+当前页面已经调整为个人品牌型求职主页，重点展示：
 
-- AI/LLM 活用与开发流程改善
-- 云、业务自动化与 Web 应用开发经验
-- Web3/Layer2 技术验证经验
-- 调查、PoC、Demo、资料化、流程嵌入、团队展开的落地方法
-- AWS 资格、语言能力、GitHub 与个人开发 App
+- AI Enablement / Developer Productivity Engineer 定位
+- Technology Adoption Framework
+- 3 个 Featured Case Studies
+- Japan × Global 差异化
+- AWS 资格、JLPT N1、GitHub 与个人开发 App
 
 后续建议补充简历 PDF、项目截图、Demo 视频、公开邮箱或 LinkedIn。
