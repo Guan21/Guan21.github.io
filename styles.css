@@ -256,7 +256,8 @@ h3 {
 .intro-grid article,
 .work-card,
 .note-grid a,
-.quote-panel {
+.quote-panel,
+.method-flow article {
   background: rgba(255, 255, 255, 0.46);
   border: 1px solid var(--line);
   padding: 24px;
@@ -272,6 +273,47 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+.method {
+  background: var(--paper-2);
+  width: 100%;
+  max-width: none;
+  padding-left: max(20px, calc((100vw - var(--max)) / 2));
+  padding-right: max(20px, calc((100vw - var(--max)) / 2));
+}
+
+.method .section-head,
+.method-flow {
+  width: min(var(--max), 100%);
+}
+
+.method-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.method-flow article {
+  min-height: 230px;
+  position: relative;
+}
+
+.method-flow span {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.method-flow h3 {
+  font-size: 22px;
+}
+
+.method-flow p {
+  color: var(--muted);
 }
 
 .work-card.featured {
@@ -545,6 +587,7 @@ blockquote {
   .intro-grid,
   .note-grid,
   .work-list,
+  .method-flow,
   .roadmap-grid {
     grid-template-columns: 1fr;
   }
