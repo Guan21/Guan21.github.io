@@ -13,9 +13,9 @@
 ## 下一轮建议补充
 
 1. 把 `Guan21` 替换成你希望公开使用的姓名或昵称。
-2. 用 3 个真实项目替换“项目 A/B/C”。
-3. 添加公开联系方式，例如邮箱、微信说明、LinkedIn 或作品集链接。
-4. 把“想法入口”里的三篇文章写出来，主页会立刻更像一个长期资产。
+2. 把 LinkedIn 按钮替换成真实公开个人链接。
+3. 补充项目截图、Demo 视频或更具体的成果数字。
+4. 按求职方向继续补日文版内容。
 
 ## 内容结构
 
@@ -25,6 +25,7 @@
 - Technology Adoption Framework
 - 3 个 Featured Case Studies
 - Japan × Global 差异化
-- AWS 资格、JLPT N1、GitHub 与个人开发 App
+- 倒序 Career Timeline
+- AWS 资格、JLPT N1、GitHub 与论文信息
 
-后续建议补充简历 PDF、项目截图、Demo 视频、公开邮箱或 LinkedIn。
+后续建议补充简历 PDF、项目截图、Demo 视频、公开邮箱或真实 LinkedIn URL。
