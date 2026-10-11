@@ -74,43 +74,54 @@
     <section class="section" id="cases">
       <div class="section-head">
         <p class="section-no">02</p>
-        <h2>Featured Case Studies</h2>
-        <p>Three patterns define my work: AI-driven development enablement, developer workflow automation, and emerging technology validation.</p>
+        <h2>Featured Engineering Work</h2>
+        <p>Three examples of how I approach enterprise AI infrastructure, agent development workflows, and cloud operations. Public links are included where available; internal systems are described without confidential details.</p>
       </div>
       <div class="case-list">
         <article class="case-card">
-          <p class="tag">Case Study 01</p>
-          <h3>AI-Driven Development Enablement</h3>
+          <p class="tag">Case Study 01 · Internal Engineering</p>
+          <h3>Enterprise AI Agent Platform &amp; Governance</h3>
+          <p class="case-summary">Making AI coding agents usable across engineering teams with a shared access, visibility, and governance layer.</p>
+          <p class="case-meta">AWS Bedrock · Claude Code · Proxy Architecture · OpenTelemetry</p>
           <dl>
-            <div><dt>Context</dt><dd>Engineering teams were exploring LLM-based development workflows, but adoption required more than introducing AI tools.</dd></div>
-            <div><dt>Challenge</dt><dd>How can AI tools become part of actual development workflows rather than isolated experiments?</dd></div>
-            <div><dt>My Role</dt><dd>Technical validation, workflow design, documentation, inquiry support and review support.</dd></div>
-            <div><dt>What I Did</dt><dd>Validated Claude Code and Codex use cases, supported AI Agent PoCs, explored PBI automation, and connected AI governance considerations with Scrum activities.</dd></div>
-            <div><dt>Outcome</dt><dd>Integrated AI-assisted workflows into development activities including refinement, review, development support and HotFix response.</dd></div>
+            <div><dt>Problem</dt><dd>Individual AI coding workflows needed a more consistent way to manage access, understand usage, inspect sessions, and identify risky operations in an enterprise environment.</dd></div>
+            <div><dt>My contribution</dt><dd>Worked on the design and validation of a Bedrock-backed Claude Code proxy, session and consumption visibility, dangerous-operation detection, and telemetry troubleshooting.</dd></div>
+            <div><dt>Engineering approach</dt><dd>Use a shared proxy as an access and observation boundary, keep session and usage signals visible to the platform, and evaluate OpenTelemetry export into AWS monitoring. Permission controls and telemetry reliability require separate validation.</dd></div>
+            <div><dt>Outcome</dt><dd>Contributed to an internal AI development platform used by engineering teams. Exact adoption, reliability, and productivity figures are intentionally not published here.</dd></div>
+            <div><dt>Evidence</dt><dd>This is internal work; architecture details, monitoring results, and contribution boundaries require confidentiality review before public release.</dd></div>
           </dl>
         </article>
 
         <article class="case-card">
-          <p class="tag">Case Study 02</p>
-          <h3>Developer Workflow Automation</h3>
+          <p class="tag">Case Study 02 · Public Development Project</p>
+          <h3>DevCrew — Agent Development Control Plane</h3>
+          <p class="case-summary">Making multi-agent development activity easier to inspect, review, and govern through a desktop control plane.</p>
+          <p class="case-meta">Desktop Engineering · Development Events · Activity Graph · Governance</p>
           <dl>
-            <div><dt>Context</dt><dd>Engineering and operations teams had repeated manual work across AWS account handling, IAM user creation, EOL tracking and project management support.</dd></div>
-            <div><dt>Challenge</dt><dd>Reduce repetitive work while keeping processes visible, reviewable and maintainable for development and operations teams.</dd></div>
-            <div><dt>My Role</dt><dd>Investigation, design, validation and implementation support for internal tools and operational improvements.</dd></div>
-            <div><dt>What I Did</dt><dd>Worked on AWS account and IAM automation, EOL management input automation, PMO/POA tools, SaveAPI validation, Slack integrations and operational data workflows.</dd></div>
-            <div><dt>Outcome</dt><dd>Moved repeatable operational tasks toward automation and made development support processes easier to track and improve.</dd></div>
+            <div><dt>Problem</dt><dd>As developers use multiple coding agents, project activity, review requests, and execution evidence become fragmented across tools and sessions.</dd></div>
+            <div><dt>My contribution</dt><dd>Defined product direction and acceptance criteria, coordinated issue/PR-based development, and validated desktop behavior across Windows and macOS environments.</dd></div>
+            <div><dt>Engineering approach</dt><dd>Model development activity through explicit events before building aggregate views; avoid inventing project status when sources are unavailable; constrain corporate network access through declared endpoint policies.</dd></div>
+            <div><dt>Outcome</dt><dd>Developed and validated parts of the Project Map and governance workflow through public pull requests. DevCrew remains an actively evolving project, not a claimed production-wide rollout.</dd></div>
+            <div><dt>Public evidence</dt><dd>Public development history and review artifacts are available below. DevCrew development builds on the open-source Orca codebase; upstream work and new contributions should be distinguished.</dd></div>
           </dl>
+          <div class="case-links">
+            <a href="https://github.com/Guan21/cc-orca" target="_blank" rel="noopener noreferrer">Source repository ↗</a>
+            <a href="https://github.com/Guan21/cc-orca/pull/114" target="_blank" rel="noopener noreferrer">Project Map PR #114 ↗</a>
+            <a href="https://github.com/Guan21/cc-orca/pull/118" target="_blank" rel="noopener noreferrer">Change Impact PR #118 ↗</a>
+          </div>
         </article>
 
         <article class="case-card">
-          <p class="tag">Case Study 03</p>
-          <h3>Emerging Technology Validation</h3>
+          <p class="tag">Case Study 03 · Enterprise Engineering</p>
+          <h3>AWS Cloud Automation &amp; Developer Operations</h3>
+          <p class="case-summary">Turning repetitive cloud and engineering support tasks into more consistent, maintainable workflows.</p>
+          <p class="case-meta">AWS · IAM · Workflow Automation · Operational Integrations</p>
           <dl>
-            <div><dt>Context</dt><dd>Teams needed to understand unfamiliar technologies such as Web3, Layer2, smart contracts and cloud deployment patterns before applying them to business discussions.</dd></div>
-            <div><dt>Challenge</dt><dd>Turn unfamiliar technical areas into concrete PoCs, readable documentation and decision-ready material.</dd></div>
-            <div><dt>My Role</dt><dd>Technical research, PoC implementation, documentation and internal knowledge sharing.</dd></div>
-            <div><dt>What I Did</dt><dd>Validated ERC223, DApps, Arbitrum Sepolia, staking smart contracts, L1/L2 transfer flows, Rollup/RaaS concepts, cloud IaC and CI/CD patterns.</dd></div>
-            <div><dt>Outcome</dt><dd>Helped teams reuse validation results in internal sharing, future project discussions and technical decision-making.</dd></div>
+            <div><dt>Problem</dt><dd>AWS account handling, IAM requests, end-of-life tracking, and project support relied on repeated manual coordination and data entry.</dd></div>
+            <div><dt>My contribution</dt><dd>Investigated, designed, and supported validation or implementation of account and IAM automation, EOL data-entry improvements, PMO/POA support tools, and Slack-connected operational workflows.</dd></div>
+            <div><dt>Engineering approach</dt><dd>Break down manual processes into repeatable workflow steps, identify review and access-control boundaries, and consider traceability and long-term maintenance before increasing automation.</dd></div>
+            <div><dt>Outcome</dt><dd>Helped move selected operational activities toward reusable automation and clearer tracking. Baseline effort, time saved, and error-rate improvements still need evidence-backed measurement.</dd></div>
+            <div><dt>Evidence</dt><dd>Public code samples, sanitized process diagrams, and before/after measurements should be selected only after confirming ownership and disclosure permission.</dd></div>
           </dl>
         </article>
       </div>
