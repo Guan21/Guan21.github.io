@@ -13,11 +13,10 @@
 ## 下一轮建议补充
 
 1. 把 `Guan21` 替换成你希望公开使用的姓名或昵称。
-2. 把 LinkedIn 按钮替换成真实公开个人链接。
-3. 为 DevCrew 补 ADR、架构图和测试证据索引。
-4. 将 MyAgent / chat_prompt_tool 补成可公开或可面试展示的 AI Application proof。
-5. 为 QiitaAIDemo 补截图、示例输出和一次端到端运行记录。
-6. 按求职方向继续补日文版内容。
+2. 为 DevCrew 补 ADR、架构图和测试证据索引。
+3. 将 MyAgent / chat_prompt_tool 补成可公开或可面试展示的 AI Application proof。
+4. 为 QiitaAIDemo 补截图、示例输出和一次端到端运行记录。
+5. 按求职方向继续补日文版内容。
 
 ## 内容结构
 
@@ -32,7 +31,7 @@
 - 倒序 Career Timeline
 - AWS 资格、JLPT N1、GitHub PR 与公开仓库证据
 
-后续建议补充简历 PDF、项目截图、Demo 视频、公开邮箱或真实 LinkedIn URL。
+后续建议补充简历 PDF、项目截图、Demo 视频或公开邮箱。
 
 ## 存档
 
