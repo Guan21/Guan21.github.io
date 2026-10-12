@@ -584,6 +584,33 @@ blockquote {
   font-size: 15px;
 }
 
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.support-grid article {
+  min-height: 300px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.support-grid p:not(.tag) {
+  color: var(--muted);
+}
+
+.support-grid a,
+.project-meta {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.project-meta {
+  display: inline-flex;
+}
+
 .article-section {
   background: var(--paper-2);
   width: 100%;
@@ -818,6 +845,7 @@ blockquote {
   .case-card dl div,
   .stats-grid,
   .registry-grid,
+  .support-grid,
   .work-list,
   .method-flow,
   .roadmap-grid,

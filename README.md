@@ -15,8 +15,9 @@
 1. 把 `Guan21` 替换成你希望公开使用的姓名或昵称。
 2. 把 LinkedIn 按钮替换成真实公开个人链接。
 3. 为 DevCrew 补 ADR、架构图和测试证据索引。
-4. 将 MyAgent 或其他项目补成完整 AI Application proof。
-5. 按求职方向继续补日文版内容。
+4. 将 MyAgent / chat_prompt_tool 补成可公开或可面试展示的 AI Application proof。
+5. 为 QiitaAIDemo 补截图、示例输出和一次端到端运行记录。
+6. 按求职方向继续补日文版内容。
 
 ## 内容结构
 
@@ -27,6 +28,7 @@
 - DevCrew / cc-orca 旗舰公开案例
 - 脱敏 Cloud AI Platform Architecture 案例
 - AI Application & Workflow Architecture 作为下一阶段补强方向
+- Supporting Evidence: Claude Code 日语架构写作、QiitaAIDemo、MyAgent / chat_prompt_tool 候选项目
 - 倒序 Career Timeline
 - AWS 资格、JLPT N1、GitHub PR 与公开仓库证据
 
