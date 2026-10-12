@@ -305,6 +305,33 @@ h3 {
   border: 1px solid var(--line);
 }
 
+.featured-case {
+  background: var(--dark);
+  color: var(--paper);
+}
+
+.featured-case dd,
+.featured-case p {
+  color: rgba(245, 241, 232, 0.72);
+}
+
+.featured-case dl,
+.featured-case dl div {
+  border-color: rgba(245, 241, 232, 0.16);
+}
+
+.featured-case .tag,
+.featured-case dt {
+  color: #ff8a4f;
+}
+
+.case-title-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .case-card h3 {
   max-width: 18em;
   margin-bottom: 24px;
@@ -339,6 +366,35 @@ h3 {
   color: var(--muted);
 }
 
+.case-card dd a {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.evidence-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 22px 0 0;
+  margin: 0;
+}
+
+.evidence-links a {
+  display: inline-flex;
+  padding: 9px 12px;
+  border: 1px solid rgba(245, 241, 232, 0.22);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.evidence-links a:hover {
+  border-color: #ff8a4f;
+  color: #ff8a4f;
+}
+
 .method {
   background: var(--paper-2);
   width: 100%;
@@ -348,6 +404,7 @@ h3 {
 }
 
 .method .section-head,
+.method .case-list,
 .method-flow {
   width: min(var(--max), 100%);
 }
@@ -456,6 +513,46 @@ blockquote {
   font-style: normal;
 }
 
+.registry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: min(var(--max), 100%);
+}
+
+.registry-grid article {
+  min-height: 260px;
+  padding: 24px;
+  background: #23211f;
+  border: 1px solid rgba(245, 241, 232, 0.12);
+}
+
+.registry-grid h3 {
+  margin-top: 26px;
+}
+
+.registry-grid p {
+  color: rgba(245, 241, 232, 0.66);
+}
+
+.registry-grid a {
+  color: #ff8a4f;
+  font-weight: 800;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 9px;
+  border: 1px solid rgba(255, 138, 79, 0.38);
+  color: #ff8a4f;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .proof-list {
   list-style: none;
   padding: 0;
@@ -480,6 +577,13 @@ blockquote {
   font-weight: 800;
 }
 
+.proof-note {
+  max-width: 760px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
 .article-section {
   background: var(--paper-2);
   width: 100%;
@@ -489,6 +593,7 @@ blockquote {
 }
 
 .article-section .section-head,
+.article-section .case-list,
 .article-section .essay,
 .roadmap .section-head,
 .roadmap .roadmap-grid,
@@ -712,10 +817,16 @@ blockquote {
   .note-grid,
   .case-card dl div,
   .stats-grid,
+  .registry-grid,
   .work-list,
   .method-flow,
   .roadmap-grid,
   .timeline li {
+    grid-template-columns: 1fr;
+  }
+
+  .case-title-row {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
