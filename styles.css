@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
@@ -27,6 +28,16 @@ body {
   background: var(--paper);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0;
+}
+
+main p,
+main dd,
+main a,
+main h1,
+main h2,
+main h3 {
+  overflow-wrap: anywhere;
 }
 
 body::before {
@@ -76,6 +87,7 @@ img {
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
   padding: 18px 0;
+  background: var(--paper);
   backdrop-filter: blur(14px);
 }
 
@@ -121,12 +133,11 @@ img {
 }
 
 .hero {
-  min-height: calc(100vh - 78px);
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
   gap: clamp(28px, 6vw, 74px);
   align-items: center;
-  padding: 56px 0 76px;
+  padding: 48px 0 64px;
 }
 
 .eyebrow,
@@ -135,7 +146,7 @@ img {
   margin: 0;
   color: var(--accent-dark);
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0;
   font-size: 12px;
   font-weight: 800;
 }
@@ -148,18 +159,24 @@ p {
 }
 
 h1 {
-  margin-bottom: 22px;
-  max-width: 10.8em;
-  font-size: clamp(42px, 7.5vw, 86px);
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  margin: 14px 0 22px;
+  font-size: 54px;
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+.hero-statement {
+  max-width: 24ch;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h2 {
   margin-bottom: 14px;
-  font-size: clamp(28px, 4.2vw, 48px);
+  font-size: 38px;
   line-height: 1.08;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 h3 {
@@ -315,6 +332,20 @@ h3 {
   color: rgba(245, 241, 232, 0.72);
 }
 
+.case-card.featured-case dd {
+  color: rgba(245, 241, 232, 0.82);
+}
+
+.featured-case .btn.secondary {
+  color: var(--paper);
+  border-color: rgba(245, 241, 232, 0.5);
+  flex-shrink: 0;
+}
+
+.case-card.featured-case dd a {
+  color: #ffab7d;
+}
+
 .featured-case dl,
 .featured-case dl div {
   border-color: rgba(245, 241, 232, 0.16);
@@ -335,7 +366,7 @@ h3 {
 .case-card h3 {
   max-width: 18em;
   margin-bottom: 24px;
-  font-size: clamp(26px, 3vw, 38px);
+  font-size: 32px;
 }
 
 .case-card dl {
@@ -357,7 +388,7 @@ h3 {
   color: var(--accent-dark);
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -549,7 +580,7 @@ blockquote {
   color: #ff8a4f;
   font-size: 11px;
   font-weight: 900;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -582,6 +613,46 @@ blockquote {
   margin: 22px 0 0;
   color: var(--muted);
   font-size: 15px;
+}
+
+.focus-list {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.focus-list > div {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.focus-list dt {
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.focus-list dd {
+  margin: 0;
+}
+
+.focus-list p {
+  max-width: 74ch;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.focus-list a {
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.focus-status {
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .support-grid {
@@ -647,9 +718,9 @@ blockquote {
 .stats-grid strong {
   display: block;
   margin-bottom: 28px;
-  font-size: clamp(30px, 4vw, 48px);
+  font-size: 34px;
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .stats-grid span {
@@ -702,7 +773,7 @@ blockquote {
   color: var(--accent-dark);
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
 }
 
 .timeline p {
@@ -725,7 +796,7 @@ blockquote {
 .roadmap-grid span {
   display: grid;
   place-items: center;
-  width: 38px;
+  width: 64px;
   height: 38px;
   margin-bottom: 34px;
   background: var(--ink);
@@ -816,6 +887,19 @@ blockquote {
 }
 
 @media (max-width: 860px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  .case-card h3 {
+    font-size: 28px;
+  }
+
+  .hero-statement {
+    font-size: 28px;
+  }
+
   .topbar {
     align-items: flex-start;
   }
@@ -843,6 +927,7 @@ blockquote {
   .intro-grid,
   .note-grid,
   .case-card dl div,
+  .focus-list > div,
   .stats-grid,
   .registry-grid,
   .support-grid,
@@ -856,6 +941,10 @@ blockquote {
   .case-title-row {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .case-card {
+    padding: 24px;
   }
 
   .work-card.featured {
